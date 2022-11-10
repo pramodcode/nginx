@@ -1,0 +1,19 @@
+services:
+  restapi:
+    image: rest-api:latest
+    container_name: restapi
+    ports:
+      - 8083:8083    
+    networks:
+      - samnet 
+  nginxapp:
+    image: nginx-app:latest
+    container_name: nginxapp
+    ports:
+      - 4200:4200    
+    networks:
+      - samnet 
+
+networks:
+  samnet:
+    driver: bridge

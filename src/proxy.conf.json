@@ -1,0 +1,6 @@
+{
+    "/view": {
+      "target": "http://localhost:8083/view",
+      "secure": false
+    }
+  }
